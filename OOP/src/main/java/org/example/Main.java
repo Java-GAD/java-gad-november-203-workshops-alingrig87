@@ -1,11 +1,13 @@
 package org.example;
 
-import org.example.abstraction.Cerc;
 import org.example.composition.Adresa;
 import org.example.composition.Persoana;
 import org.example.encapsulation.ContBancar;
 //import org.example.inheritance.Animal;
 import org.example.inheritance.Caine;
+import org.example.intefaces.Cerc;
+import org.example.intefaces.Dreptunghi;
+import org.example.intefaces.IFormaGeometrica;
 import org.example.overloading.Calculator;
 import org.example.polymorphism.Dog;
 import org.example.polymorphism.Animal;
@@ -58,6 +60,15 @@ public class Main {
         calculator.aduna(1, 2);
         calculator.aduna(2,3,4);
         calculator.aduna(2.0, 1);
+
+        IFormaGeometrica cerc = new Cerc(20);
+        IFormaGeometrica dreptunghi = new Dreptunghi(10, 15);
+
+        System.out.println("Aria cercului: " + cerc.calculeazaAria());
+        System.out.println("Perimetrul cercului: " + cerc.calculeazaPerimetrul());
+
+        System.out.println("Aria dreptunghiului: " + dreptunghi.calculeazaAria());
+        System.out.println("Perimetrul dreptunghiului: " + dreptunghi.calculeazaPerimetrul());
 
     }
 }

@@ -1,0 +1,126 @@
+{
+	"info": {
+		"_postman_id": "2f75cbeb-8d16-494d-9d7d-b4e09b66e3f5",
+		"name": "Mongo-Products-Gad-Nov-2023",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "17396853"
+	},
+	"item": [
+		{
+			"name": "Get All Products",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/products",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create new product",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Iphone 15 PRO\",\r\n    \"price\": 5999.99,\r\n    \"imageURL\": \"https://lcdn.altex.ro/resize/media/catalog/product/i/p/2bd48d28d1c32adea0e55139a4e6434a/iphone_15_pro_natural_titanium_pdp_image_position_1_wwen_fc0946e7.jpg\",\r\n    \"description\": \"Cel mai nou iphone\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/products",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Product",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": \"2726f827\",\r\n    \"name\": \"Iphone 15 PRO editat\",\r\n    \"price\": 5784754.99,\r\n    \"imageURL\": \"https://lcdn.altex.ro/resize/media/catalog/product/i/p/2bd48d28d1c32adea0e55139a4e6434a/iphone_15_pro_natural_titanium_pdp_image_position_1_wwen_fc0946e7.jpg\",\r\n    \"description\": \"Cel mai nou iphone editat\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/products",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Product",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/products/2726f827",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"products",
+						"2726f827"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

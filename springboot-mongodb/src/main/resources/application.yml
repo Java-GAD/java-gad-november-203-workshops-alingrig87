@@ -1,0 +1,5 @@
+spring:
+  data:
+    mongodb:
+      uri: mongodb+srv://costel:costel@cluster0.f4v5k.mongodb.net/?retryWrites=true&w=majority
+      database: products
